@@ -6,8 +6,7 @@
     width: 100%;
     float: left;
     background: rgb(0,0,0);
-
-background: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
     color: #ffffff;
     padding: 30px 0;
     position: fixed;
@@ -164,15 +163,199 @@ main{
 section.multimedia{
     width: 100%;
     float: left;
+    position: relative;
 }
+
+.multimedia .video-bg-texto{
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    margin: 15% 20% 0 0;
+
+    color: rgba(255,255,255,0);
+}
+
+.multimedia:hover .video-bg-texto{
+    color: rgba(255, 255, 255, 1);
+    margin: 20% 20% 0 0;
+}
+
+
+.video-bg-negro{
+    width: 100%;
+    float: left;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    color: white;
+}
+
+.video-bg-texto{
+    width: 30%;
+    float: right;
+    margin: 20% 20% 0 0;
+    
+}
+
 
 section.multimedia video{
     max-width: 100%;
     width: 100%;
 }
 
-.importante-css{
+.grid{
+    width: 100%;
     float: left;
     background: rgb(248,30,3);
+    background: -moz-linear-gradient(97deg, rgba(248,30,3,1) 0%, rgba(248,19,30,1) 32%, rgba(249,0,77,1) 100%);
+    background: -webkit-linear-gradient(97deg, rgba(248,30,3,1) 0%, rgba(248,19,30,1) 32%, rgba(249,0,77,1) 100%);
     background: linear-gradient(97deg, rgba(248,30,3,1) 0%, rgba(248,19,30,1) 32%, rgba(249,0,77,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f81e03",endColorstr="#f9004d",GradientType=1);
+}
+
+.contenedor-33{
+    width: 30%;
+    float: left;
+    border: solid 1px #fff;
+    color: #fff;
+    margin: 1.5%;
+    border-radius: 5px;
+    background-color: #191919;
+
+}
+
+.grid-titulo{
+    width: 100%;float: left;color: #fff;text-align: center;
+}
+
+.grid-titulo h2{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 56px;
+}
+
+.grid2{
+    width: 80%;
+    margin: 120px auto 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.caja{
+    background-color: #bbb;
+    padding: 20px;
+}
+
+.caja1{
+    background:  url(../images/banner01.jpg) 50% no-repeat;
+    background-size: cover;
+    grid-column: 1/3;
+}
+.caja img {
+    max-width: 100%;
+}
+
+.grid4{
+    width: 80%;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,300px)
+}
+
+.imagen1{
+    background: tomato;
+    border-radius: 50px;
+
+    grid-column:1/2 ;
+    grid-row: 1/3;
+}
+
+.imagen2{
+    background: #f90;
+    border-radius: 50px;
+
+    grid-column:2/3 ;
+    grid-row: 1/2;
+}
+
+.imagen3{
+    background: yellow;
+    border-radius: 50px;
+    grid-column:3/4 ;
+    grid-row: 1/2;
+}
+
+.imagen4{
+    background: wheat;
+    border-radius: 50px;
+    grid-column:2/4 ;
+    grid-row: 2/3;
+}
+
+.imagen5{
+    background: rgb(106, 76, 21);
+    border-radius: 15px;
+    grid-column:1/4 ;
+    grid-row: 3/4;
+}
+
+
+
+.grid5{
+    width: 80%;
+    margin: 120px auto 20px;
+    background: #f90;
+    padding: 50px;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+}
+
+/*Formato tablets*/
+@media screen and (max-width: 768px) {
+    .linea{
+        width: 100%;
+    }     
+    .logo, 
+    nav{
+        width: 100%;
+    }
+
+    .logo{
+        text-align: center;
+    }
+    mav ul li a {
+        margin-right: 5px;
+        padding: 6px 10px;
+    }
+    .suscripcion{
+        display: none;
+    }
+
+    .cont-50{
+        min-width: 100%;
+    }
+    #audio-center{
+        text-align: center;
+    }
+
+    div.cont-50.mt-3 audio{
+        margin-top: 90px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
 }
